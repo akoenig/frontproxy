@@ -11,7 +11,9 @@
 var fs        = require('fs'),
     httpProxy = require('http-proxy'),
     pkg       = require('./package.json'),
-    router    = require('./router.json');
+    router    = require('./router.json'),
+    uid,
+    gid;
 
 process.title = 'frontproxy';
 
@@ -30,11 +32,12 @@ if (router.https) {
 }
 
 // Change the user and group after port binding.
-var uid = process.env.NODE_UID || 0;
+uid = process.env.NODE_UID || 0;
+gid = process.env.NODE_GID || 0;
 
 if (uid) {
-    process.setgid(uid);
+    process.setgid(gid);
     process.setuid(uid);
 }
 
-console.log(pkg.name + ' - FrontProxy is listening. Running with uid = ' + process.getuid());
+console.log(pkg.name + ' - FrontProxy is listening. Running as ' + process.getuid() + ':' + process.getgid());

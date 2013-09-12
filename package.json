@@ -2,7 +2,7 @@
   "author": "André König <akoenig@posteo.de>",
   "name": "frontproxy",
   "description": "A tiny reverse proxy on top of http-proxy.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "url": ""
   },
