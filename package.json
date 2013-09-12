@@ -1,0 +1,28 @@
+{
+  "author": "André König <akoenig@posteo.de>",
+  "name": "frontproxy",
+  "description": "A tiny reverse proxy on top of http-proxy.",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "author": "André König <akoenig@posteo.de> (http://iam.andrekoenig.info)",
+  "dependencies": {
+    "http-proxy": "~0.10.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "reverse",
+    "proxy"
+  ],
+  "license": "MIT"
+}
