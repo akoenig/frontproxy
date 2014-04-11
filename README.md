@@ -12,6 +12,11 @@ Copy the router.sample.json and change it until the routes fit your needs.
 
 ## Changelog
 
+### Release 0.3.0 (Future)
+
+- [ ] Print configuration in a table
+- [ ] Move the `router.json` to ~/.frontproxyrc
+
 ### Release 0.2.0 (20130912)
 
 - Moved GID to own environment variable.
